@@ -12,7 +12,7 @@ public class CORSConfig implements WebMvcConfigurer {
 		registry.addMapping("/api/**")
 			.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 			.allowedHeaders("*")
-			.allowedOrigins("https://172.26.11.249:4200")
+			.allowedOrigins("http://172.26.11.249")
 			.allowCredentials(true);
 	}
 }
