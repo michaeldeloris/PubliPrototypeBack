@@ -40,7 +40,7 @@ public class ValidateUserController {
 		Cookie cookie = new Cookie("token", token);
 		cookie.setPath("/api");
 		cookie.setHttpOnly(true);
-		cookie.setSecure(true);
+		//cookie.setSecure(true);
 		cookie.setMaxAge(1800);
 		response.addCookie(cookie);
 		
@@ -54,7 +54,7 @@ public class ValidateUserController {
 		Cookie cookie = new Cookie("token", null);
 		cookie.setPath("/api");
 		cookie.setHttpOnly(true);
-		cookie.setSecure(true);
+		//cookie.setSecure(true);
 		cookie.setMaxAge(0);
 		response.addCookie(cookie);
 		SecurityContextHolder.getContext().setAuthentication(null);
