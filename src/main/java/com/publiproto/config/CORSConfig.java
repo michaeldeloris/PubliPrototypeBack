@@ -12,7 +12,8 @@ public class CORSConfig implements WebMvcConfigurer {
 		registry.addMapping("/api/**")
 			.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 			.allowedHeaders("*")
-			.allowedOrigins("http://172.26.11.249")
+			.allowedOrigins("http://192.168.1.31:4200")	// dev
+			//.allowedOrigins("http://www.publiproto.com") //prod
 			.allowCredentials(true);
 	}
 }
