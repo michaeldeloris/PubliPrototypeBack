@@ -30,5 +30,7 @@ build/
 ### VS Code ###
 .vscode/
 
+.metadata/**
+
 application.properties
 src/main/java/com/publiproto/services/DataInitialization.java

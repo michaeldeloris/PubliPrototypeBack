@@ -51,7 +51,7 @@ public class UserController {
 	
 	@DeleteMapping("/{id}")
 	@ResponseBody
-	public void deletePublication(@PathVariable("id") Long id) {
+	public void deleteUser(@PathVariable("id") Long id) {
 		userRepository.deleteById(id);
 	}
 }
